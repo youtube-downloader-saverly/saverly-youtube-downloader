@@ -49,10 +49,6 @@ Download `Saverly-Setup_x64.7z` from the [latest release](../../releases/latest)
  
 Download `Saverly.dmg` from the [latest release](../../releases/latest), open it, and drag Saverly to your Applications folder. Signed and notarized with an Apple Developer ID, so it opens without Gatekeeper warnings. Universal binary — runs natively on Apple Silicon (M1 through M5) and Intel Macs. All dependencies bundled.
  
-### Linux
- 
-Linux packaging is on the v1.1 roadmap — `.deb`, `.rpm`, AppImage, and Flatpak. If you want to run Saverly on Linux today, the source builds against any distribution with Node 20+ and Rust 1.75+. Follow the build instructions in [BUILDING.md](BUILDING.md).
- 
 ## ✨ Features — download, transcribe, summarize
  
 ### Video download
