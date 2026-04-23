@@ -9,7 +9,15 @@
 [![MIT License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/youtube-downloader-saverly/saverly-youtube-downloader?style=flat-square)](https://github.com/youtube-downloader-saverly/saverly-youtube-downloader/stargazers)
 [![Downloads](https://img.shields.io/badge/Downloads-147-blue?style=flat-square)](https://github.com/<your-org>/Saverly/releases)
- 
+
+
+<div align="center">
+  <a href="../../releases/latest">
+    <img width="1200" alt="Saverly — The AI-Powered YouTube Downloader for Windows & Mac" src="assets/saverly.png" />
+  </a>
+</div>
+
+
 [Install](#-install) · [Features](#-features--download-transcribe-summarize) · [AI Assistant](#how-ai-video-transcription-and-summary-works) · [Comparison](#comparison-with-other-youtube-downloaders) · [Supported Sites](#supported-sites--1000-platforms) · [FAQ](#frequently-asked-questions) · [Roadmap](#roadmap)
  
 ---
