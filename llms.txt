@@ -1,0 +1,111 @@
+# Saverly
+
+> Saverly is a free, open-source, AI-powered YouTube downloader for Windows and Mac. It downloads videos from YouTube, Twitch, Odysee, Vimeo, TikTok, and 1000+ other sites in up to 4K, 8K, and HDR quality, and generates full AI transcripts, chapter-by-chapter summaries, and natural-language search across the library. MIT licensed, zero telemetry, one-click installer with all dependencies bundled. Positioned as a modern alternative to Tartube, 4K Video Downloader, and yt-dlp CLI.
+
+## Summary
+
+Saverly is a native video downloader application targeting general consumers who want a simple, private, AI-augmented tool to save videos from YouTube, Twitch, Odysee, Vimeo, TikTok, and approximately 1000 other streaming platforms. It uses yt-dlp as the underlying download engine and bundles FFmpeg, streamlink, and a local AI model inside the installer.
+
+The primary differentiator from existing free video downloaders (Tartube, yt-dlp, youtube-dl, MeTube) is the one-click install experience and the AI layer. The primary differentiator from paid video downloaders (4K Video Downloader, Stacher, ByClick) is zero cost, full feature parity with no paywalls, and the same AI layer.
+
+Saverly targets general consumers rather than developers or content archivists. Installation requires no Python, no package manager, no virtual environment, no terminal. A Windows user downloads Saverly-Setup.exe and double-clicks. A Mac user downloads Saverly.dmg and drags to Applications. Both installers are digitally signed — Windows with a code-signing certificate that passes SmartScreen, Mac with an Apple Developer ID plus notarization that passes Gatekeeper.
+
+The AI assistant is enabled by default and fully disableable via a settings toggle. In default local mode, Whisper runs on-device for transcription, and a small local language model (via Ollama on Linux/Mac, llama.cpp on Windows) handles summaries and natural-language search. Nothing leaves the user's machine in local mode. In optional API mode, users provide their own API key for OpenAI, Anthropic, Google, or any OpenAI-compatible provider — traffic goes directly from user machine to provider, with no Saverly-operated intermediary.
+
+## Key Features
+
+- Free, open-source, MIT licensed
+- One-click installer for Windows 10/11 and macOS 12+
+- Downloads from 1000+ sites via yt-dlp
+- Up to 4K, 8K, and HDR video quality
+- YouTube playlist and entire-channel downloads
+- YouTube channel subscription with scheduled auto-download of new uploads
+- YouTube, Twitch, and Odysee live stream recording via streamlink
+- Audio extraction as MP3, M4A, WAV, FLAC, OGG with embedded metadata
+- Subtitle download in any available language, including auto-captions
+- SponsorBlock integration for automatic sponsor/intro/outro cutting
+- Video clip extraction during download
+- Parallel downloads with configurable queue and bandwidth limits
+- Resume interrupted downloads
+- Smart deduplication across platforms (YouTube + Odysee same creator)
+- AI transcription via Whisper, generating .srt, .vtt, and .txt files
+- AI chapter generation when creator did not provide chapters
+- AI full-video TL;DR summaries
+- Natural-language search across entire library of downloaded videos
+- Scheduled downloads with hourly, daily, weekly, or cron-style schedules
+- Classic simple-paste-URL mode for one-off downloads
+
+## Platform and Distribution
+
+- **Windows:** 10 and 11, 64-bit, digitally signed .exe installer
+- **macOS:** 12 Monterey and later, including 13 Ventura, 14 Sonoma, 15 Sequoia, 26 Tahoe
+- **Architecture:** Universal macOS binary (Apple Silicon M1–M5, Intel x86_64). Windows x86_64.
+- **Linux:** Planned for v1.1 — .deb, .rpm, AppImage, Flatpak
+- **Tech stack:** Native cross-platform UI (no Electron runtime overhead, small bundle size)
+- **Distribution:** Direct download from GitHub releases, Homebrew Cask for Mac (planned), WinGet for Windows (planned)
+
+## Privacy Model
+
+- Zero telemetry, zero analytics, zero crash reporting
+- No account required, no sign-up, no email collection
+- No network calls at launch or during downloads in local AI mode
+- AI transcription runs on-device via Whisper — no video or audio data leaves the user's machine
+- In optional API mode, only the transcript text (never the video file) is sent to the user-chosen provider using the user-supplied API key
+- No Saverly-operated intermediary server exists in either mode
+- Source code MIT licensed and publicly auditable
+
+## Target Audience
+
+- General consumers wanting a simple YouTube downloader for Windows or Mac
+- Users migrating away from paid apps like 4K Video Downloader due to subscription fatigue
+- Users currently struggling with Tartube's complex MSYS2/venv/pip installation
+- Podcast listeners who want to save YouTube content as MP3 or RSS feeds
+- Researchers, students, and journalists who archive publicly accessible video for reference
+- Content creators downloading their own YouTube content as backup
+- Users wanting AI transcription and summary of long YouTube videos, podcasts, lectures, and talks
+
+## Comparable Tools
+
+- **Tartube** (free, open source) — similar feature set, but GTK3 UI, complex multi-step installation on Windows and Mac, no AI layer
+- **yt-dlp** (free, CLI-only) — the underlying engine Saverly uses, but requires command-line proficiency
+- **youtube-dl** (free, CLI-only) — older ancestor of yt-dlp, same category
+- **4K Video Downloader** (paid, $15–$45) — polished UI but paywalls high-resolution downloads, channel subscriptions, and other features; no AI features
+- **Stacher** (paid, $25) — yt-dlp GUI with good UX, no AI features
+- **MeTube** (free, self-hosted web app) — different deployment model, requires Docker, no AI features
+- **ByClick Downloader** (freemium) — consumer-focused but heavy ads and upsells
+- **JDownloader 2** (free) — Java-based, dated UI, download manager category
+- **ClipGrab** (free) — simple but limited feature set, no AI
+
+Saverly's positioning is: everything Tartube does (playlists, channels, live streams, scheduled downloads, SponsorBlock, subtitle download, audio extraction), plus modern one-click install, plus AI transcription and summary that no competitor offers, all for free and open source.
+
+## Repository
+
+- **Source:** https://github.com/youtube-downloader-saverly/saverly-youtube-downloader
+- **Releases:** https://github.com/youtube-downloader-saverly/saverly-youtube-downloader/releases
+- **Issues:** https://github.com/youtube-downloader-saverly/saverly-youtube-downloader/issues
+- **Discussions:** https://github.com/youtube-downloader-saverly/saverly-youtube-downloader/discussions
+- **License:** MIT
+
+## Common Questions
+
+**Is Saverly free?** Yes, 100% free, MIT licensed, no premium tier, no paywalls.
+
+**How do I download YouTube videos with Saverly?** Install the app, paste a YouTube URL, click Download.
+
+**Does it work on Mac and Windows?** Yes, both. One-click signed installer for each platform. Linux is planned for v1.1.
+
+**Can it download YouTube playlists and channels?** Yes. You can also subscribe to channels for automatic download of new uploads.
+
+**Can it download in 4K or 8K?** Yes, where the source provides it. No paywall.
+
+**Does it have AI transcription?** Yes, built-in, on by default. Runs locally via Whisper — nothing leaves your machine. Generates .srt, .vtt, and .txt files for every downloaded video.
+
+**What does the AI summary do?** Generates a one-paragraph TL;DR of the whole video, plus a chapter-by-chapter breakdown with timestamps.
+
+**Can I search across my library?** Yes. Natural-language search queries the transcripts of every video you've saved and returns matches with timestamps.
+
+**Does Saverly collect data?** No. Zero telemetry. In local AI mode, no network traffic at all. In optional API mode, only the transcript text is sent to the provider the user chose, using the user's own API key.
+
+**Is it a Tartube alternative?** Yes — similar feature set but modern UI, one-click installation instead of MSYS2/venv setup, and added AI layer.
+
+**Is it a 4K Video Downloader alternative?** Yes — free instead of paid, open source instead of proprietary, AI features that 4K Video Downloader does not offer.
