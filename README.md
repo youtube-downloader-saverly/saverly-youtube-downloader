@@ -132,9 +132,9 @@ Saverly's AI features are **on by default but fully controllable**. You can disa
  
 ## Screenshots
  
-| Homepage | Downloading YouTube playlist in 4K | History |
+| Homepage | Downloading YouTube playlist in 4K | FFmpeg options |
 |---|---|---|
-| ![Saverly main library showing downloaded YouTube videos with AI-generated summaries and chapter breakdowns](assets/homepage.png) | ![Saverly downloading a YouTube playlist in 4K quality with progress bars and queue](assets/videopage.png) | ![Saverly AI video transcript view with natural-language search and timestamps](assets/history.png) |
+| ![Saverly main library showing downloaded YouTube videos with AI-generated summaries and chapter breakdowns](assets/homepage.png) | ![Saverly downloading a YouTube playlist in 4K quality with progress bars and queue](assets/example6.png) | ![Saverly AI video transcript view with natural-language search and timestamps](assets/example30.png) |
  
 ## Supported sites — 1000+ platforms
  
