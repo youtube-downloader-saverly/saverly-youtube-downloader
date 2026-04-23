@@ -43,7 +43,7 @@ Saverly is the middle path. The feature set of a premium YouTube video downloade
  
 ### Windows
  
-Download `Saverly-Setup.exe` from the [latest release](../../releases/latest) and double-click it. The installer is digitally signed, so Windows SmartScreen lets it through without warnings. Every dependency — yt-dlp, FFmpeg, the local AI model — is bundled inside. No Python, no MSYS2, no terminal, no manual DLL copying. Takes about a minute and Saverly is ready to use.
+Download `Saverly-Setup_x64.7z` from the [latest release](../../releases/latest) and double-click it. The installer is digitally signed, so Windows SmartScreen lets it through without warnings. Every dependency — yt-dlp, FFmpeg, the local AI model — is bundled inside. No Python, no MSYS2, no terminal, no manual DLL copying. Takes about a minute and Saverly is ready to use.
  
 ### Mac
  
